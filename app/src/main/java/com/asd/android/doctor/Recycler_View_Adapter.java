@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import java.util.Collections;
@@ -16,7 +17,7 @@ import java.util.List;
  * Created by Mantan on 8/20/2016.
  */
 public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder> implements View.OnClickListener{
-
+    private Intent i;
     List<Data> list = Collections.emptyList();
     Context context;
 
@@ -51,7 +52,33 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder> imp
         holder.title.setText(list.get(position).title);
         holder.description.setText(list.get(position).description);
         holder.imageView.setImageResource(list.get(position).imageId);
-
+        holder.setClickListener(new ItemClickListener() {
+            @Override
+            public void onClick(View view, int position, boolean isLongClick) {
+                if (position == 0){
+                    i = new Intent(view.getContext(),SakitKepala.class);
+                    view.getContext().startActivity(i);
+                }else if(position==1){
+                    i = new Intent(view.getContext(),Mata.class);
+                    view.getContext().startActivity(i);
+                }else if(position==2){
+                    i = new Intent(view.getContext(),activitytiga.class);
+                    view.getContext().startActivity(i);
+                }else if(position==3){
+                    i = new Intent(view.getContext(),activityempat.class);
+                    view.getContext().startActivity(i);
+                }else if(position==4){
+                    i = new Intent(view.getContext(),activitylima.class);
+                    view.getContext().startActivity(i);
+                }else if(position==5){
+                    i = new Intent(view.getContext(),activityenam.class);
+                    view.getContext().startActivity(i);
+                }else if(position==6){
+                    i = new Intent(view.getContext(),activitytujuh.class);
+                    view.getContext().startActivity(i);
+                }
+            }
+        });
     }
 
     @Override

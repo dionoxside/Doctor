@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SakitKepala"
+    tools:context="com.asd.android.doctor.SakitKepala">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:orientation="vertical">
-
-    <ListView
-        android:id="@+id/list"
-        android:divider="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <TextView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mainText"
-        android:text="empty"/>
+        android:layout_marginLeft="8sp"
+        android:text="Pingsan"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_gravity="center|left|right">
+    </TextView>
 
-</LinearLayout>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sakitkepala"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:text="Gejala"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_gravity="center|left|right">
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/epilepsi2"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:text="Penanganan"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_gravity="center|left|right">
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/epilepsi3"
+        android:textSize="14sp"
+        />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

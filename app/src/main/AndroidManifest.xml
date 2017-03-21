@@ -19,6 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".SakitKepala" />
+        <activity android:name=".Mata" />
+        <activity android:name=".activitytiga" />
+        <activity android:name=".activityempat" />
+        <activity android:name=".activitylima" />
+        <activity android:name=".activityenam" />
+        <activity android:name=".activitytujuh"></activity>
     </application>
 
 </manifest>

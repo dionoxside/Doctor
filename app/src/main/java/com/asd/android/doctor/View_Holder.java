@@ -1,9 +1,7 @@
 package com.asd.android.doctor;
 
-import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,10 +33,9 @@ public class View_Holder extends RecyclerView.ViewHolder
     public void setClickListener(Recycler_View_Adapter.ItemClickListener itemClickListener) {
         this.clickListener = itemClickListener;
     }
+
     @Override
-    public void onClick(View view) {
-        Log.e("title",title.getText().toString());
-        Intent i = new Intent(view.getContext(),SakitKepala.class);
-        view.getContext().startActivity(i);
+    public void onClick(View v) {
+        clickListener.onClick(v,getPosition(),false);
     }
 }

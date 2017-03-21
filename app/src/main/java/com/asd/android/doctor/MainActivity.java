@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,9 +26,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ListView lv = (ListView) findViewById(R.id.list);
-        adapter = new SakitKepala(this )
-        lv.setAdapter();
+
 
 
         List<Data> data = fill_with_data();
@@ -122,10 +119,5 @@ public class MainActivity extends AppCompatActivity
         data.add(new Data("Virus", "", R.drawable.virus48));
         data.add(new Data("Bakteri", "", R.drawable.microorganisms48));
         return data;
-    }
-
-    public void test(View view) {
-        Intent i = new Intent (this, SakitKepala.class);
-        startActivity(i);
     }
 }

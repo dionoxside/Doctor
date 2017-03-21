@@ -5,4 +5,20 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_sakit_kepala">SakitKepala</string>
+    <string name="sakitkepala">Pingsan (Syncope/collapse) yaitu
+         hilangnya kesadaran sementara karena otak kekurangan
+         O2, lapar, terlalu banyak mengeluarkan tenaga, dehidrasi
+         (kekurangan cairan tubuh), hiploglikemia, animea.</string>
+    <string name="epilepsi2">● Perasaan limbung\n● Pandangan berkunang-kunang\n● Telinga berdenging\n●  Nafas tidak teratur\n● Muka pucat\n● Biji mata melebar\n● Lemas\n● Keringat dingin\n● Menguap berlebihan\n● Tak respon (beberapa menit)\n● Denyut nadi lambat</string>
+    <string name="epilepsi3">● Baringkan korban dalam posisi terlentang\n
+        ● Tinggikan tungkai melebihi tinggi jantung\n
+        ● Longgarkan pakaian yang mengikat dan hilangkan barang yang menghambat pernafasan\n
+        ● Beri udara segar\n
+        ● Periksa kemungkinan cedera lain\n
+        ● Selimuti korban\n
+        ● Korban diistirahatkan beberapa saat\n
+        ● Bila tak segera sadar, periksa nafas dan nadi, posisi stabil, Rujuk ke instansi kesehatan</string>
+
+
 </resources>
